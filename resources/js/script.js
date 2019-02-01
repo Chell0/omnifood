@@ -82,4 +82,20 @@ $(document).ready(function () {
         }
     });
 
+    // Maps
+    var map = new GMaps({
+        div: '.map',
+        lat: 33.4103022,
+        lng: 0.30,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 33.4103022,
+        lng: 0.1650977,
+        title: 'Kenya',
+        infoWindow: {
+            content: '<p>Our Africa HQ</p>'
+        }
+    });
 });
